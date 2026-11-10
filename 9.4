@@ -1,0 +1,14 @@
+#include <iostream>
+int main() {
+    while (true) {
+        int num;
+        std::cout<<"Enter num: " << std::endl;
+        std::cin>>num;
+        if(num < 0) {
+            std::cout<<"exit.."<<std::endl;
+            break;
+        }
+        std::cout<<"Your num: " << num << std::endl;
+    }
+    return 0;
+}
