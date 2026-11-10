@@ -1,0 +1,14 @@
+#include <iostream>
+int main() {
+    int digit;
+    int sum = 0;
+    std::cout<<"Enter num" << std::endl;
+    std::cin >> digit;
+    for(int i = 0; i < digit; i++){
+        if(i % 2 == 0 && i % 10 != 0) {
+            sum += i;
+        }
+    }
+    std::cout<<sum<<std::endl;
+    return 0;
+}
