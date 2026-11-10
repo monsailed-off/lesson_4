@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+    int digits;
+    std::cout<<"Enter num: "<<std::endl;
+    std::cin>>digits;
+    int result = 0;
+    while(digits > 0) {
+        std::cout<<result<<" " << digits<< " "<<std::endl;
+        result = result * 10 + digits % 10;
+        digits = digits / 10;
+    }
+    std::cout << result << std::endl;
+    return 0;
+}
